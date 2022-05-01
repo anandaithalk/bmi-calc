@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+
+  <style>
+
+    h1   {color: #7D0552}  /* CSS code for heading h1 */
+    h4   {color: #DC143C}    /* CSS code for heading h4 */
+    h3  {color: #842DCE}  /* CSS code for heading h3 */
+    h7  {color: #2B1B17}  /* CSS code for heading h7 */
+    /* CSS code for button */
+    
+    .button_css {
+      background-color: none; /* none */
+      border: none; 
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-family:Verdana;  
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button_css:hover {
+      background-color: #3e8e41;
+    }          
+    .button_css:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <div>
+    <center>
+    <br>
+    <br>
+    <img src="static/images/banner.png" class="w3-border w3-padding" alt=" " style= "width:53%">
+    <br>
+    <h4> Developed by </h4> 
+    <font face = 'Brush Script MT', cursive size="6px"> <h3> Anand Aithal K</h3> </font>
+    </center>
+    </div>
+
+  <style>
+    body {
+      background-image: url("static/images/back_2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+      </style>
+  
+  
+ <div class="login">
+	
+    <!-- Form get input to get BMI -->
+    <center>
+    <form action="{{ url_for('predict')}}"method="post">
+      <br>
+      <br>
+      <center><h1> Please enter the weight in kilograms and height in centimeters </h1></center> 
+      <right>  
+    	<input align="right" type="number" name="Weight" placeholder="Weight in kilograms" required="required" width="48" height="30"/>
+    	<br>
+      <input align="right" type="number" name="Height" placeholder="Height in centimeters" required="required" width="48" height="20"/>
+      <br>
+      </right>  
+        <br>
+        
+        <!-- Show button -->
+        <div class="button_cont" align="center" ><a class="button_css"  target="_blank" rel="nofollow noopener">
+            <button type="submit" class="btn btn-primary btn-block btn-large"><strong><h7>Lets Go..(Get Results)</h7></strong></button></a>
+        </div>
+        
+    </form>
+    </center>
+   
+  
+    </div>
+
+</body>
+</html>
